@@ -1,0 +1,19 @@
+h1 {
+border: solid gold 25px ;
+background-color: white;
+text-align: center;
+font-size: 50px
+}
+.kimlik {
+border: solid crimson;
+text-align: left;
+border-radius: 10px 0 10px 0;
+}
+.tanıtım {
+  border: solid crimson;
+  border-radius: 10px 0 10px 0;
+}
+
+a {
+  color: crimson;
+}
