@@ -1,0 +1,1 @@
+# SenolKaragoz06.github.io
