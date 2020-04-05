@@ -1,1 +1,1 @@
-# SenolKaragoz06.github.io
+# nekadarsenolsun.com.tr
