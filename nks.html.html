@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ne kadar Şenolsun?</title>
+    <style>
+      body{
+        font-family: helvetica;
+        font-size:15px
+      }
+      fieldset {
+        width: 200px;
+        height: 175px;
+      }
+        h1{
+        text-align: center;
+        }
+        .ilkSatır {
+          float: left;
+        }
+
+        .ikinciSatır {
+          float: left;
+        }
+        .üçüncüSatır {
+          float: left;
+        }
+        .dördüncüSatır {
+          float: left;
+        }
+        .beşinciSatır {
+          float: left;
+        }
+        .sonuç {
+          float: left;
+          position:absolute;
+          bottom: 5%;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Ne Kadar Şenolsun?</h1>
+<form>
+<div class="ilkSatır">  <fieldset> <legend>Cinsiyetiniz?</legend>
+    <input id="erkek" type="radio" name="cins">
+    <label>Erkek</label> <br>
+    <input type="radio" name="cins">
+    <label>Kadın</label> <br>
+    <input type="radio" name="cins">
+    <label>Diğer</label> <br>
+  </fieldset>
+  <fieldset> <legend>En sevdiğiniz yemek hangisi?</legend>
+    <input id="pk" type="radio" name="yemek">
+    <label>Patates Kızartması</label> <br>
+    <input id="h" type="radio" name="yemek">
+    <label>Hamburger</label> <br>
+    <input id="kk" type="radio" name="yemek">
+    <label>Karnabahar kızartması</label> <br>
+    <input id="a" type="radio" name="yemek">
+    <label>Adana</label> <br>
+    <input id="b" type="radio" name="yemek">
+    <label>İskender</label> <br>
+
+  </fieldset> </div>
+  <div class="ikinciSatır"> <fieldset> <legend>En çok hangi tür müzik dinlemeyi seversin?</legend>
+    <input id="rap" type="radio" name="Müzik">
+    <label>Rap</label> <br>
+    <input id="rock" type="radio" name="Müzik">
+    <label>Rock</label> <br>
+    <input id="pop" type="radio" name="Müzik">
+    <label>Pop</label> <br>
+    <input id="arabesk" type="radio" name="Müzik">
+    <label>Arabesk</label> <br>
+
+  </fieldset>
+  <fieldset> <legend>En sevdiğin renk hangisi?</legend>
+    <input type="radio" name="Renk">
+    <label>Mavi</label> <br>
+    <input type="radio" name="Renk">
+    <label>Yeşil</label> <br>
+    <input type="radio" name="Renk">
+    <label>Siyah</label> <br>
+    <input id="mor" type="radio" name="Renk">
+    <label>Mor</label> <br>
+    <input type="radio" name="Renk">
+    <label>Pembe</label> <br>
+
+  </fieldset> </div>
+ <div class="üçüncüSatır">  <fieldset> <legend>Çocukluğunda en sevdiğin çizgi film neydi?</legend>
+    <input id="bakugan" type="radio" name="Film">
+    <label>Bakugan</label> <br>
+    <input type="radio" name="Film">
+    <label>Ben10</label> <br>
+    <input type="radio" name="Film">
+    <label>Winx</label> <br>
+    <input type="radio" name="Film">
+    <label>Sünger Bob</label> <br>
+    <input type="radio" name="Film">
+    <label>Caillou</label> <br>
+  </fieldset>
+  <fieldset><legend>Kaç kardeşiniz var?</legend>
+    <input type="radio" name="kardeş">
+    <label>0</label> <br>
+    <input id="bir" type="radio" name="kardeş">
+    <label>1</label> <br>
+    <input type="radio" name="kardeş">
+    <label>2</label> <br>
+    <input type="radio" name="kardeş">
+    <label>3</label> <br>
+    <input type="radio" name="kardeş">
+    <label>4</label> <br>
+    <input type="radio" name="kardeş">
+    <label>5+</label> <br>
+  </fieldset> </div>
+ <div class="dördüncüSatır">  <fieldset><legend>Boş vaktinizde hangisini en çok yapmayı seversiniz?</legend>
+    <input id="music" type="radio" name="hobi">
+    <label>Müzik dinlemek</label> <br>
+    <input type="radio" name="hobi">
+    <label>Kitap okumak</label> <br>
+    <input type="radio" name="hobi">
+    <label>Resim çizmek</label> <br>
+    <input id="bilgisayar" type="radio" name="hobi">
+    <label>Bilgisayar oyunu oynamak</label> <br>
+    <input type="radio" name="hobi">
+    <label>Televizyon izlemek</label> <br>
+    <input type="radio" name="hobi">
+    <label>Sosyal medyada dolaşmak</label> <br>
+  </fieldset>
+  <fieldset><legend>En çok hoşlandığınız film türü</legend>
+    <input type="radio" name="tür">
+    <label>Romantik</label> <br>
+    <input type="radio" name="tür">
+    <label>Komedi</label> <br>
+    <input type="radio" name="tür">
+    <label>Aksiyon</label> <br>
+    <input type="radio" name="tür">
+    <label>Gerilim-korku</label> <br>
+    <input id="bilim" type="radio" name="tür">
+    <label>Bilim-kurgu</label> <br>
+    <input type="radio" name="tür">
+    <label>Dram</label> <br>
+  </fieldset> </div>
+  <div class="beşinciSatır"> <fieldset><legend>En sevdiğiniz enstrüman hangisi?</legend>
+    <input type="radio" name="alet">
+    <label>Flüt</label> <br>
+    <input type="radio" name="alet">
+    <label>Cello</label> <br>
+    <input type="radio" name="alet">
+    <label>Gitar</label> <br>
+    <input type="radio" name="alet">
+    <label>Keman</label> <br>
+    <input type="radio" name="alet">
+    <label>Bağlama</label> <br>
+    <input id="piyano" type="radio" name="alet">
+    <label>Piyano</label> <br>
+  </fieldset>
+  <fieldset><legend>Lisedeyken en seviğiniz ders neydi?</legend>
+    <input type="radio" name="ders">
+    <label>Fizik</label> <br>
+    <input id="kimya" type="radio" name="ders">
+    <label>Kimya</label> <br>
+    <input type="radio" name="ders">
+    <label>Biyoloji</label> <br>
+    <input type="radio" name="ders">
+    <label>Matematik</label> <br>
+    <input type="radio" name="ders">
+    <label>Beden eğitimi</label> <br>
+    <input type="radio" name="ders">
+    <label>Türkçe</label> <br>
+  </fieldset> </div>
+  <label>İsminiz: </label>
+  <input id="isim" type="text" placeholder="isminizi buraya yazınız" > <br> <br>
+  <input type="button" value="Onayla" onclick="arttır()">
+  <input type="button" value="Sorgula" onclick="göster()">
+  <div class="sonuç">
+    <p id ="son"></p>
+  </div>
+
+</form>
+<script>
+  var senolPuan = 0;
+function artıŞenol() {
+
+  senolPuan = senolPuan + 1;
+}
+function arttır() {
+var kk = document.getElementById("kk").checked;
+var rock = document.getElementById("rock").checked;
+var mor = document.getElementById("mor").checked;
+var bakugan = document.getElementById("bakugan").checked;
+var bir = document.getElementById("bir").checked;
+var bilgisayar = document.getElementById("bilgisayar").checked;
+var music = document.getElementById("music").checked;
+var bilim = document.getElementById("bilim").checked;
+var piyano = document.getElementById("piyano").checked;
+var kimya = document.getElementById("kimya").checked;
+var erkek = document.getElementById("erkek").checked;
+var pk = document.getElementById("pk").checked;
+var h = document.getElementById("h").checked;
+var a = document.getElementById("a").checked;
+var b = document.getElementById("b").checked;
+
+if (kk === true) {
+  artıŞenol();
+}
+if (rock === true) {
+  artıŞenol();
+}
+if (mor === true) {
+  artıŞenol();
+}
+if (bakugan === true) {
+  artıŞenol();
+}
+if (bir === true) {
+  artıŞenol();
+}
+if (music === true) {
+  artıŞenol();
+}
+if (bilgisayar === true) {
+  artıŞenol();
+}
+if (bilim === true) {
+  artıŞenol();
+}
+if (piyano === true) {
+  artıŞenol();
+}
+if (kimya === true) {
+  artıŞenol();
+}
+if (erkek === true) {
+  artıŞenol();
+}
+if (pk === true) {
+  artıŞenol();
+}
+if (h === true) {
+  artıŞenol();
+}
+if (a === true) {
+  artıŞenol();
+}
+if (b === true) {
+  artıŞenol();
+}
+}
+// burdan sonrası sonuç
+function göster() {
+    var isim = document.getElementById("isim").value;
+    var son = document.getElementById("son");
+  if (senolPuan === 0) {
+document.write("Lütfen bütün şıkları doldurunuz.")
+  }
+  if (senolPuan === 1) {
+document.write("Sayın "+isim+ " maalesef 100 üzerinden 10 puan aldınız. Kendinizi geliştiriniz..."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+  if (senolPuan === 2) {
+document.write("Sayın "+isim+" 100 üzerinden 20 puan aldınız. Umutsuz değilsiniz ama işinizin çok zor olduğunu belirtmeliyim."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 3) {
+document.write("Sayın "+isim+" 100 üzerinden 30 puan aldınız. Biraz daha çabayla ulaşılamayacak hedef yoktur."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 4) {
+document.write("Sayın "+isim+" 100 üzerinden 40 puan aldınız. Nerdeyse yarı yarıya gerçekten isterseniz yapabilirsiniz."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 5) {
+document.write("Sayın "+isim+" 100 üzerinden 50 puan aldınız. Siz yarı yarıya Şenolsunuz. Çok az yolunuz kalmış."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 6) {
+document.write("Sayın "+isim+" 100 üzerinden 60 puan aldınız. Kaliteli bir test olmuş sizin için.Bu yolda devam edebilirsiniz."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 7) {
+document.write("Sayın "+isim+" 100 üzerinden 70 puan aldınız. E çok iyi daha ne olsun sorarım size Sayın "+isim+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 8) {
+document.write("Sayın "+isim+" 100 üzerinden 80 puan aldınız. Sizi kutluyorum çok başarılısınız Şenol olma konusunda, eğer bunun bi olimpiyatı olsaydı çok başarılı olurdunuz."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 9) {
+document.write("Sayın "+isim+" 100 üzerinden 90 puan aldınız. Vay be yeni bir Şenol mu yetişiyor yoksa, Tebrikler."+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+if (senolPuan === 10) {
+document.write("Sayın "+isim+" 100 üzerinden 100 puan aldınız. Size tek bir sorum olucak. Siz Şenol musunuz?"+"<hr>"+"<a href='mailto:karagozsenol06@gmail.com'>Testin yapımcısına ulaşın</a>")
+}
+}
+</script>
+  </body>
+</html>
