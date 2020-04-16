@@ -1,19 +1,28 @@
-h1 {
-border: solid gold 25px ;
-background-color: white;
-text-align: center;
-font-size: 50px
+body{
+background-color: lightgreen;
+margin: 0;
+margin-top: 0;
 }
-.kimlik {
-border: solid crimson;
-text-align: left;
-border-radius: 10px 0 10px 0;
+.header{
+  background-color: violet;
+  padding: 30px 0 30px 0;
 }
+h1{
+  text-align: center;
+}
+
 .tanıtım {
   border: solid crimson;
   border-radius: 10px 0 10px 0;
 }
 
 a {
-  color: crimson;
+  color: blue;
+  text-decoration: none;
+}
+ a:hover{
+  color:black;
+}
+.kimlik p{
+  padding: 0 20px 0 20px;
 }
