@@ -1,22 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>saniye</title>
 </head>
 <body>
 <button onclick ="rastgele();"  >Soru getir</button>
+<p id="za" ></p>
 <script>
 function randomSayı(min, max){
-return Math.Floor(Math.Random() * (max - min + 1)) + min;
+return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 function rastgele(){
- var sorular = ["a","b","c","d","e","f","g","h"];
- var sayı = randomSayı(0, sorular.Length);
-  document.write(sorular[sayı]);
+  var sorular = ["a","b","c","d","e","f","g","h"];
+var sayı = randomSayı(0,sorular.length-1);
+document.getElementById("za").innerHTML= sorular[sayı];
 }
-
-
-
 </script>
 </body>
 </html>
+
