@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>saniye</title>
+<head>
+<body>
+<button onclick ="rastgele" >Soru getir</button>
+<script>
+function randomSayı(min, max){
+return Math.Floor(Math.Random() * (max - min + 1)) + min;
+}
+function rastgele(){
+var sayı = randomSayı(0, sorular.Length);
+}
+var sorular = ["a","b","c","d","e","f","g","h"];
+document.write(sorular[sayı]);
+</script>
+</body>
+</html>
