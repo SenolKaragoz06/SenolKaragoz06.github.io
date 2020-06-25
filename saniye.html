@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style media="screen">
+    p{
+      font-size:25px;
+    }
+    #sup{
+      height:100px; width:200px; background-color:green; color:white; margin-left:100px; font-size:25px; margin-top:50px;
+    }
+  </style>
 <title>Hafıza</title>
 </head>
 <body>
 <button style="height:100px; width:200px; background-color:green; color:white; margin-left:100px; font-size:25px; margin-top:50px;" onclick ="rastgele();"  >Kod getir</button>
 <button style="height:100px; width:200px; background-color:green; color:white; margin-left:100px; font-size:25px; margin-top:50px;" onclick ="numara();" >Sayı getir</button>
-<p id="za" style ="font-size:25px; font-weight:bold; margin-left:325px;" ></p>
+<button id="sup" onclick="sonuc();">Cevabı Göster</button>
+<p id="za" style ="font-size:25px; font-weight:bold; margin-left:480px;" ></p>
+<br><br><br>
+<p>Kodunuz:</p>
+<p id="kod" class="kod"></p>
+<p>Sayınız:</p>
+<p id="sayı"></p>
+<p>Söylenmesi Gereken Kod:</p>
+<p id="supposed"></p>
 <script>
 function numara(){
     var sayılar = ["1","2","3","4","5"];
-    var sayı1 = randomSayı(0,sayılar.length-1);
-    var sayı2 = randomSayı(0,sayılar.length-1);
-    var sayı3 = randomSayı(0,sayılar.length-1);
-    document.getElementById("za").innerHTML = sayılar[sayı1] + sayılar[sayı2] + sayılar[sayı3];
+    var sayı10 = randomSayı(0,sayılar.length-1);
+    var sayı11 = randomSayı(0,sayılar.length-1);
+    var sayı12 = randomSayı(0,sayılar.length-1);
+    var sayı13 = randomSayı(0,sayılar.length-1);
+    var sayı14 = randomSayı(0,sayılar.length-1);
+    var sayı = document.getElementById("sayı");
+    sayı.style.color = "white";
+    document.getElementById("za").innerHTML = sayılar[sayı10] + sayılar[sayı11] + sayılar[sayı12] + sayılar[sayı13] + sayılar[sayı14];
+    document.getElementById("sayı").innerHTML =sayılar[sayı10] + sayılar[sayı11] + sayılar[sayı12] + sayılar[sayı13] + sayılar[sayı14];
+
 }
 function randomSayı(min, max){
 return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function rastgele(){
 
+function rastgele(){
   var harfler = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","x","v","w","y","z","1","2","3","4","5","6","7","8","9","0"];
 var sayı1 = randomSayı(0,harfler.length-1);
 var sayı2 = randomSayı(0,harfler.length-1);
 var sayı3 = randomSayı(0,harfler.length-1);
 var sayı4 = randomSayı(0,harfler.length-1);
 var sayı5 = randomSayı(0,harfler.length-1);
-document.getElementById("za").innerHTML= harfler[sayı1] + harfler[sayı2] + harfler[sayı3] + harfler[sayı4] + harfler[sayı5];
+var sayı6 = randomSayı(0,harfler.length-1);
+var sayı7 = randomSayı(0,harfler.length-1);
+var sayı8 = randomSayı(0,harfler.length-1);
+var sayı9 = randomSayı(0,harfler.length-1);
+var kod = document.getElementById("kod");
+kod.style.color = "white";
+document.getElementById("za").innerHTML = harfler[sayı1] + harfler[sayı2] + harfler[sayı3] + harfler[sayı4] + harfler[sayı5] + harfler[sayı6] + harfler[sayı7] + harfler[sayı8] + harfler[sayı9];
+document.getElementById("kod").innerHTML =harfler[sayı1] + harfler[sayı2] + harfler[sayı3] + harfler[sayı4] + harfler[sayı5] + harfler[sayı6] + harfler[sayı7] + harfler[sayı8] + harfler[sayı9];
+
+}
+function sonuc() {
+  var kod = document.getElementById("kod");
+  var sayı = document.getElementById("sayı");
+  var kodi = kod.innerHTML;
+  var sayıi = sayı.innerHTML;
+  kod.style.color = "black";
+  sayı.style.color = "black";
+  document.getElementById("supposed").innerHTML= kodi[sayıi[0]-1] + kodi[sayıi[1]-1] + kodi[sayıi[2]-1] + kodi[sayıi[3]-1] + kodi[sayıi[4]-1];
 }
 </script>
 </body>
 </html>
+
