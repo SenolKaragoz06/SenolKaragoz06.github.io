@@ -1,0 +1,28 @@
+<html>
+<body>
+<p><input id="text" placeholder="Hikaye" type="text" /> <input id="buton" value="yayınla" type="button" onclick="bas()" /></p>
+<p id="sayac"></p>
+<p id="cumle"></p>
+<script>
+  
+var oyuncusayı = prompt ("1.oyuncunun ismi: ") ;
+var oyuncusayint = parseInt(oyuncusayı);
+var oyuncu = [];
+var cumle = [];
+document.getElementById("sayac").innerHTML = oyuncusayı
+for (let i = 0; i < oyuncusayint;i++) {
+  oyuncu[i]=i+1;
+}
+function bas(){
+  var text = document.getElementById("text").value;
+  cumle.push(text);
+  var x = oyuncu.pop()
+  document.getElementById("sayac").innerHTML = x-1 
+  if(oyuncu[0] !== 1){
+    document.getElementById("cumle").innerHTML = cumle
+  } 
+}
+
+  </script>
+</body>
+</html>
