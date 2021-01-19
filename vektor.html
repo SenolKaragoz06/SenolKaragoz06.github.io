@@ -1,0 +1,32 @@
+<html>
+  <body>
+  <h1 id="header">Vektörler</h1>
+  <p>u: <input type="text" placeholder="i" id ="ui"> <input type="text" placeholder="j" id="uj"> <input type="text" placeholder="k" id="uk">
+  <p>v: <input type="text" placeholder="i" id ="vi"> <input type="text" placeholder="j" id="vj"> <input type="text" placeholder="k" id="vk">
+  <button onclick="dotcal()"> Skaler Vektör Hesapla(u.v)</button>
+  <button onclick="angcal()"> Aradaki Açıyı Hesapla</button>
+  <p id="sonuc"></p>
+</body>
+<script>
+function dotcal(){
+var ui = parseInt(document.getElementById("ui").value);
+var uj = parseInt(document.getElementById("uj").value);
+var uk = parseInt(document.getElementById("uk").value);
+var vi = parseInt(document.getElementById("vi").value);
+var vj = parseInt(document.getElementById("vj").value);
+var vk = parseInt(document.getElementById("vk").value);  
+var sonuc = (ui*vi)+(uj*vj)+(uk*vk);
+document.getElementById("sonuc").innerHTML= "Sonucunuz: "+sonuc;
+}
+function angcal(){
+var ui = parseInt(document.getElementById("ui").value);
+var uj = parseInt(document.getElementById("uj").value);
+var uk = parseInt(document.getElementById("uk").value);
+var vi = parseInt(document.getElementById("vi").value);
+var vj = parseInt(document.getElementById("vj").value);
+var vk = parseInt(document.getElementById("vk").value);
+var sonuc = Math.acos(((ui*vi)+(uj*vj)+(uk*vk))/(Math.sqrt(Math.pow(ui,2)+Math.pow(uj,2)+Math.pow(uk,2))*Math.sqrt(Math.pow(vi,2)+Math.pow(vj,2)+Math.pow(vk,2))))
+document.getElementById("sonuc").innerHTML= "Sonucunuz: "+sonuc*57.2957795;
+}
+</script>
+</html>
